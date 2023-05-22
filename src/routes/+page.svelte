@@ -71,7 +71,7 @@
 						/>
 
 						<h1 class="eyebrow-heading-3 u-color-text-pink">Appwrite</h1>
-						<h2 class="heading-level-1 u-margin-block-start-16">Git App Maker</h2>
+						<h2 class="heading-level-1 u-margin-block-start-16">GitHub App Maker</h2>
 						<p class="body-text-1 u-normal u-small u-margin-block-start-16">
 							1-click GitHub app generator with all optimal configuration for Appwrite.
 						</p>
