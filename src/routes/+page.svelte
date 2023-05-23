@@ -45,7 +45,9 @@
 			checks: 'write',
 			contents: 'write',
 			metadata: 'read',
-			pull_requests: 'read'
+			pull_requests: 'write',
+			issues: 'write',
+			statuses: 'write'
 		},
 		default_events: ['pull_request', 'push']
 	};
