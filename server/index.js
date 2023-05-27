@@ -86,10 +86,10 @@ module.exports = async (context) => {
 	let url = context.req.path;
 	url = url === '/' ? '/' + fallbackFile : url;
 
-	let file = path.join(__dirname, '../') + '/' + buildPath + url;
+	let file = path.join(__dirname, '../') + buildPath + url;
 
 	if (!fs.existsSync(path)) {
-		file = path.join(__dirname, '../') + '/' + buildPath + '/' + fallbackFile;
+		file = path.join(__dirname, '../') + buildPath + '/' + fallbackFile;
 	}
 
 	return context.res.send(fs.readFileSync(file), 200, { 'content-type': getContentTypes(file) });
