@@ -1,4 +1,4 @@
-- Server.js includes static hosting for Appwrite
+- server/index.js includes static hosting for Appwrite
 
 # create-svelte
 
