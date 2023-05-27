@@ -83,16 +83,14 @@ const getContentTypes = (file) => {
 };
 
 module.exports = async (context) => {
-	// let url = context.req.path;
-	// url = url === '/' ? '/' + fallbackFile : url;
+	let url = context.req.path;
+	url = url === '/' ? '/' + fallbackFile : url;
 
-	// let file = path.join(__dirname, '../') + buildPath + url;
+	let file = path.join(__dirname, '../') + buildPath + url;
 
-	// if (!fs.existsSync(path)) {
-	// 	file = path.join(__dirname, '../') + buildPath + '/' + fallbackFile;
-	// }
+	if (!fs.existsSync(path)) {
+		file = path.join(__dirname, '../') + buildPath + '/' + fallbackFile;
+	}
 
-	// const file = path.join(__dirname, '../build/index.html');
-	// return context.res.send(fs.readFileSync(file), 200, { 'content-type': getContentTypes(file) });
-	return context.res.send('<h1>Test!</h1>', 200, { 'content-type': 'text/html' });
+	return context.res.send(fs.readFileSync(file), 200, { 'content-type': getContentTypes(file) });
 };
