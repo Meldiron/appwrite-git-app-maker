@@ -4,7 +4,7 @@
 
 	let endpoint = '';
 
-	let loaded = false;
+	let loaded = "a";
 
 	onMount(async () => {
 		if (browser) {
